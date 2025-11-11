@@ -1,39 +1,32 @@
-# 🎯 EngageSense – AI Content Insight Generator
+# AI Content Insight Generator
 
-EngageSense adalah alat analisis performa konten berbasis **AI** yang membantu agensi sosial media dan kreator konten memahami kinerja postingan mereka secara cepat dan efisien.  
-Dengan menggabungkan **analisis data** (pandas) dan **Google Gemini API**, tool ini menghasilkan **laporan otomatis** berisi KPI utama, insight AI, serta rekomendasi strategis untuk peningkatan performa konten berikutnya.
-
----
-
-## 🚀 Fitur Utama
-
-- **📊 Analisis Performa Otomatis**
-  - Menghitung KPI penting seperti *views, engagement rate,* dan *top performing content* dari file CSV TikTok Export.
-
-- **🧠 Insight AI**
-  - Menggunakan **Gemini 2.0 Flash** untuk membuat ringkasan performa mingguan, alasan keberhasilan konten, serta ide dan rekomendasi jadwal posting berikutnya.
-
-- **📄 Laporan Otomatis**
-  - Menghasilkan laporan teks siap dibaca klien/agency (dapat dikonversi ke PDF/Notion).
-
-- **⚡ Plug-and-Play**
-  - Cukup upload file `Content.csv` hasil export TikTok Analytics, jalankan script, dan laporan otomatis muncul.
+EngageSense adalah alat analisis performa konten berbasis AI yang membantu agensi sosial media dan kreator memahami kinerja postingan mereka dengan cepat dan efisien.  
+Dengan menggabungkan analisis data (pandas) dan Google Gemini API, alat ini menghasilkan laporan otomatis berisi KPI utama, insight AI, serta rekomendasi strategis untuk peningkatan performa konten berikutnya.
 
 ---
 
-## 🧰 Tech Stack
+## Fitur Utama
+
+- Analisis performa otomatis dari file CSV hasil export TikTok Analytics.
+- Menghitung metrik utama seperti views, engagement rate, dan top performing content.
+- Menggunakan Gemini 2.0 Flash untuk menghasilkan insight dan rekomendasi jadwal upload.
+- Laporan otomatis dalam format teks yang siap dibaca oleh klien atau tim internal.
+
+---
+
+## Tech Stack
 
 | Komponen | Deskripsi |
 |-----------|------------|
-| **Python** | Bahasa utama |
-| **Pandas** | Analisis data & KPI |
-| **Google Gemini API** | Insight dan rekomendasi berbasis AI |
-| **ReportLab (optional)** | Ekspor laporan ke PDF |
-| **Jupyter / Terminal** | Menjalankan script secara lokal |
+| Python | Bahasa utama |
+| Pandas | Analisis data dan KPI |
+| Google Gemini API | Insight dan rekomendasi berbasis AI |
+| ReportLab (opsional) | Ekspor laporan ke PDF |
+| Jupyter / Terminal | Menjalankan script secara lokal |
 
 ---
 
-## 📂 Struktur Folder
+## Struktur Folder
 
 ```
 
@@ -49,49 +42,47 @@ EngageSense/
 
 ---
 
-## ⚙️ Cara Menjalankan
+## Cara Menjalankan
 
-1. **Clone / Download project**
+1. Clone atau download project:
    ```bash
    git clone https://github.com/<username>/EngageSense.git
    cd EngageSense
-    ````
+   ````
 
-2. **Install dependensi**
+2. Install dependensi:
 
    ```bash
    pip install pandas google-generativeai reportlab
    ```
 
-3. **Tambahkan API Key**
+3. Tambahkan API Key:
 
    * Dapatkan API key di [Google AI Studio](https://aistudio.google.com)
-   * Ganti di baris berikut:
+   * Ganti baris berikut di kode:
 
      ```python
      API_KEY = "YOUR_GEMINI_API_KEY"
      ```
 
-4. **Jalankan program**
+4. Jalankan program:
 
    ```bash
    python main.py
    ```
 
-5. **Hasil laporan**
+5. Hasil laporan akan muncul di terminal dan disimpan otomatis ke:
 
-   * Akan muncul di terminal dan disimpan otomatis dalam file:
-
-     ```
-     weekly_report.txt
-     ```
+   ```
+   weekly_report.txt
+   ```
 
 ---
 
-## 🧩 Contoh Output
+## Contoh Output
 
 ```
-TIKTOK WEEKLY PERFORMANCE REPORT
+TIKTOK PERFORMANCE REPORT
 ========================================
 Total Video       : 15
 Total Views       : 13,820
@@ -110,11 +101,11 @@ Top 3 by Engagement Rate:
 
 ---
 
-## 📧 Kontak
+## Kontak
 
 **Yanda Aziz Husein**
 - AI Engineer & Data Scientist
-- 📍 Medan, Indonesia
-- 📩 [yandaazizhusein1122@gmail.com](mailto:yandaazizhusein1122@gmail.com)
-- 🔗 [LinkedIn](https://linkedin.com/in/yanda-aziz-husein) | [GitHub](https://github.com/YandaAzizHusein)
-
+- Medan, Indonesia
+- Email: [yandaazizhusein1122@gmail.com](mailto:yandaazizhusein1122@gmail.com)
+- LinkedIn: [linkedin.com/in/yanda-aziz-husein](https://linkedin.com/in/yanda-aziz-husein)
+- GitHub: [github.com/YandaAzizHusein](https://github.com/YandaAzizHusein)
